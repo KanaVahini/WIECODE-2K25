@@ -1,19 +1,20 @@
 import React from 'react';
 import './ProductivityLanding.css';
 import TrueFocus from './TrueFocus';
+import Navbar from "./components/Navbar";
+import DetectionSections from "./components/DetectionSections.jsx";
 
 const ProductivityLanding = () => {
   return (
     <div className="landing-container">
 
-      
+      <Navbar />
 
       {/* Content */}
       <div className="main-content">
         <div className="content-grid">
 
           <div className="left-content">
-            
 
             <h1 className="main-heading">
               Verify<br />AUTHENTICITY
@@ -30,6 +31,7 @@ const ProductivityLanding = () => {
                 Learn more <span className="arrow">→</span>
               </button>
             </div>
+
           </div>
 
         </div>
@@ -38,6 +40,7 @@ const ProductivityLanding = () => {
           <div className="cylinder-space"></div>
           <div className="wheel-space"></div>
           <div className="curved-space"></div>
+
           <div className="true-focus-wrapper">
             <TrueFocus 
               sentence="Fake Fact"
@@ -49,7 +52,11 @@ const ProductivityLanding = () => {
             />
           </div>
         </div>
-      </div>
+      </div>   {/* ← END of main-content */}
+
+      {/* FULL WIDTH SCROLL SECTION — placed OUTSIDE main-content */}
+      <DetectionSections />
+
     </div>
   );    
 };

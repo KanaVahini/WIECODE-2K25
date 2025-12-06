@@ -1,0 +1,116 @@
+/* Container */
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Inner navbar box */
+.nav-inner {
+  width: 70%;
+  background: linear-gradient(135deg, #8B2F2F, #4A0E0E);
+
+  padding: 4px 25px;
+  border-radius: 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  backdrop-filter: blur(20px);
+  transition: transform 0.3s ease;
+}
+
+/* Slight hover lift */
+.nav-inner:hover {
+  transform: translateY(-4px);
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #111;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Button */
+.nav-btn {
+  padding: 8px 18px;
+  
+  color:#4A0E0E;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #000;
+  transform: scale(1.06);
+}
+
+/* Entrance Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .nav-inner {
+    width: 90%;
+    padding: 12px 18px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-btn {
+    padding: 6px 14px;
+  }
+}

@@ -1,0 +1,62 @@
+.detect-wrapper {
+  width: 100vw;      /* fill entire screen width */
+  margin-left: 50%;
+  transform: translateX(-50%);   /* center correctly */
+  padding: 80px 0;
+  background: transparent;
+  position: relative;
+  z-index: 20;
+  overflow: hidden;  /* ensure clean edges */
+}
+
+
+.loop-mask {
+  width: 100vw;
+  overflow: hidden;
+}
+
+
+.loop-track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+}
+
+.detect-card {
+  width: 380px;
+  min-height: 260px;
+  background: white;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0,0,0,0.05);
+  flex-shrink: 0;
+}
+
+.detect-card h2 {
+  font-size: 26px;
+  margin-bottom: 16px;
+  color: #3b1d0f;
+}
+
+.detect-card p {
+  font-size: 15px;
+  color: #5c4639;
+  margin-bottom: 20px;
+}
+
+.detect-card button {
+  background: #5b1d14;
+  color: white;
+  border: none;
+  padding: 15px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.detect-card button:hover {
+  background: #44120d;
+}
+
+
