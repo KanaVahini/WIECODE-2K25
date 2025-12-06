@@ -17,9 +17,9 @@
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-
+  gap: 40px;
   backdrop-filter: blur(20px);
   transition: transform 0.3s ease;
 }
@@ -40,7 +40,7 @@
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
 
 .nav-links a {
