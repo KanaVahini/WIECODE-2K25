@@ -1,0 +1,200 @@
+/* ===========================================================
+   Dynamic Premium Cream → Soft Rose → Muted Maroon Gradient
+   =========================================================== */
+.landing-container {
+  min-height: 100vh;
+
+  /* Premium Top-Cream + Bottom-Maroon gradient */
+  background: linear-gradient(
+    to bottom,
+    #FBF7EF 0%,        /* Cream top */
+    #FBF7EF 55%,       /* Keep cream for top half */
+    #E6C9C4 75%,       /* Soft rose */
+    #C99995 87%,       /* Light maroon */
+    #A56B68 100%       /* Slightly deeper maroon at very bottom */
+  );
+
+  background-size: 200% 200%;
+  animation: smoothMaroonMove 5s ease-in-out infinite;
+
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes smoothMaroonMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* ===========================================================
+   Navigation
+   =========================================================== */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 48px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-box {
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, #6B2E31, #B47973);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logo-diamond {
+  width: 18px;
+  height: 18px;
+  background: white;
+  transform: rotate(45deg);
+  border-radius: 4px;
+}
+
+.made-by-text,
+.nav-link,
+.description {
+  color: #4A3A3A;
+}
+
+.framer-text {
+  color: #2E1E1E;
+  font-weight: bold;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.nav-link {
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.nav-link:hover {
+  color: #2e1e1e;
+}
+
+/* Buttons */
+.get-free-btn,
+.primary-btn {
+  background: #6B2E31;
+  color: white;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.get-free-btn:hover,
+.primary-btn:hover {
+  background: #4e1e20;
+}
+
+.secondary-btn {
+  background: none;
+  border: none;
+  color: #2e1e1e;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.secondary-btn:hover {
+  gap: 12px;
+}
+
+/* ===========================================================
+   Main Content
+   =========================================================== */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 48px 0;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.main-heading {
+  font-size: 68px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #2e1e1e;
+  margin-bottom: 26px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.65;
+  max-width: 520px;
+  margin-bottom: 34px;
+}
+
+/* Right content position areas */
+.right-content {
+  position: relative;
+  height: 650px;
+}
+
+.cylinder-space {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  width: 150px;
+  height: 150px;
+}
+
+.wheel-space {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 450px;
+}
+
+.curved-space {
+  position: absolute;
+  right: 0;
+  bottom: 32px;
+  width: 120px;
+  height: 120px;
+}
+
+/* ===========================================================
+   Responsive
+   =========================================================== */
+@media (max-width: 1024px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+  .main-heading {
+    font-size: 48px;
+  }
+}
