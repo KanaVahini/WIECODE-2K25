@@ -75,7 +75,7 @@ export default function Footer() {
           height: 2px;
           background: linear-gradient(90deg, 
             transparent 0%,
-            rgba(212, 139, 106, 0.6) 50%,
+            rgba(229, 210, 201, 0.6) 50%,
             transparent 100%
           );
         }
