@@ -1,39 +1,22 @@
 import React from 'react';
 import './ProductivityLanding.css';
+import TrueFocus from './TrueFocus';
 
 const ProductivityLanding = () => {
   return (
     <div className="landing-container">
 
-      {/* Navigation */}
-      <nav className="navbar">
-        <div className="logo-section">
-          <div className="logo-box">
-            <div className="logo-diamond"></div>
-          </div>
-          <span className="made-by-text">made by</span>
-          <span className="framer-text">Framer</span>
-        </div>
-        
-        <div className="nav-links">
-          <a href="#" className="nav-link">About</a>
-          <a href="#" className="nav-link">Features</a>
-          <a href="#" className="nav-link">Customers</a>
-          <a href="#" className="nav-link">Updates</a>
-          <a href="#" className="nav-link">Help</a>
-          <button className="get-free-btn">Get for free</button>
-        </div>
-      </nav>
+      
 
       {/* Content */}
       <div className="main-content">
         <div className="content-grid">
 
           <div className="left-content">
-            <div className="version-badge">Version 2.0 is here</div>
+            
 
             <h1 className="main-heading">
-              Pathway to<br />productivity
+              Verify<br />AUTHENTICITY
             </h1>
 
             <p className="description">
@@ -42,23 +25,33 @@ const ProductivityLanding = () => {
             </p>
 
             <div className="button-group">
-              <button className="primary-btn">Get for free</button>
+              <button className="primary-btn">Try Now !</button>
               <button className="secondary-btn">
                 Learn more <span className="arrow">→</span>
               </button>
             </div>
           </div>
 
-          <div className="right-content">
-            <div className="cylinder-space"></div>
-            <div className="wheel-space"></div>
-            <div className="curved-space"></div>
-          </div>
+        </div>
 
+        <div className="right-content">
+          <div className="cylinder-space"></div>
+          <div className="wheel-space"></div>
+          <div className="curved-space"></div>
+          <div className="true-focus-wrapper">
+            <TrueFocus 
+              sentence="Fake Fact"
+              manualMode={false}
+              blurAmount={5}
+              borderColor="red"
+              animationDuration={2}
+              pauseBetweenAnimations={1}
+            />
+          </div>
         </div>
       </div>
     </div>
-  );
+  );    
 };
 
 export default ProductivityLanding;
