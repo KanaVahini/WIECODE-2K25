@@ -1,3 +1,4 @@
+
 /* ===========================================================
    Section Wrapper (Warm Cream + Maroon Tint)
    =========================================================== */
@@ -5,6 +6,14 @@
   width: 100vw;
   min-height: 100vh;
   padding: 80px 20px;
+}
+
+.detect-wrapper {
+  width: 100vw;      /* fill entire screen width */
+  margin-left: 50%;
+  transform: translateX(-50%);   /* center correctly */
+  padding:60px 0 60px;
+
   background: transparent;
   position: relative;
   overflow: hidden;

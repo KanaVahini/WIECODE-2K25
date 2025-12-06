@@ -8,14 +8,13 @@ const Navbar = () => {
         <h2 className="logo">Authentify</h2>
         <ul className="nav-links">
           <li><a href="#">About Us</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Team</a></li>
           <li><a href="#">login</a></li>
+          <li><a href="#">home</a></li>
+          <li><a href="#">Features</a></li>
         </ul>
         <button className="nav-btn">Sign Up</button>
       </div>
     </nav>
   );
 };
-
-export default Navbar;
+export default Navbar;  

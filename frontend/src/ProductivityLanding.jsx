@@ -55,6 +55,26 @@ const ProductivityLanding = () => {
 
       {/* FULL WIDTH SCROLL SECTION — placed OUTSIDE main-content */}
       <DetectionSections />
+        <section className="about-section">
+
+    <div className="about-content">
+
+        <h2 className="about-title">About Us</h2>
+
+        <p className="about-text">
+        At Authentify, we’re building more than a product — 
+        we’re building a shield. A place where your decisions are guided by truth, 
+        not noise. In a digital world overflowing with fake reviews, deceptive products, 
+        and misleading news, we stand as your quiet guardian.  
+        <br /><br />
+        Our mission is simple: empower you to verify anything that shapes your world.  
+        With intelligent detection, clean design, and seamless experiences, 
+        Authentify helps you choose wisely, live confidently, and trust with clarity.
+        </p>
+
+    </div>
+    </section>
+
 
     </div>
   );    
