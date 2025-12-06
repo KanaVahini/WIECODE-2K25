@@ -3,6 +3,7 @@ import './ProductivityLanding.css';
 import TrueFocus from './TrueFocus';
 import Navbar from "./components/Navbar";
 import DetectionSections from "./components/DetectionSections.jsx";
+import Footer from './components/footer.jsx';
 
 const ProductivityLanding = () => {
   return (
@@ -55,6 +56,7 @@ const ProductivityLanding = () => {
 
       {/* FULL WIDTH SCROLL SECTION — placed OUTSIDE main-content */}
       <DetectionSections />
+      <Footer />                        
 
     </div>
   );    
