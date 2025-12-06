@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import "./DetectionSections.css";
+import React from 'react';
+import './DetectionSections.css';
 
 export default function DetectionSections() {
   const sections = [
@@ -7,43 +7,39 @@ export default function DetectionSections() {
       title: "Fake News Detection",
       desc: "Instantly verify headlines and breaking news using AI-powered source validation and linguistic analysis.",
       btn: "Detect Fake News",
+      icon: "📰"
     },
     {
       title: "Fake Product Detection",
       desc: "Scan product images to detect counterfeit packaging, wrong labels, and manipulated serial numbers.",
       btn: "Detect Fake Product",
+      icon: "📦"
     },
     {
       title: "Fake Review Detection",
       desc: "Analyze product reviews to identify bot-generated, duplicate, or manipulated ratings.",
       btn: "Detect Fake Reviews",
+      icon: "⭐"
     },
   ];
 
-  // Duplicate array to make seamless loop
-  const loopSections = [...sections, ...sections];
-
   return (
-    <section className="detect-wrapper">
-      <div className="loop-mask">
-        <motion.div
-          className="loop-track"
-          animate={{ x: ["0%", "-50%"] }}
-          transition={{
-            duration: 15,
-            ease: "linear",
-            repeat: Infinity,
-          }}
-        >
-          {loopSections.map((s, i) => (
-            <div key={i} className="detect-card">
-              <h2>{s.title}</h2>
-              <p>{s.desc}</p>
-              <button>{s.btn}</button>
-            </div>
-          ))}
-        </motion.div>
+    <div className="detect-wrapper-static">
+      <h1 className="detect-title">Detection Tools</h1>
+
+      <div className="detect-grid">
+        {sections.map((s, i) => (
+          <div key={i} className="detect-card">
+            <div className="card-icon">{s.icon}</div>
+            <h2>{s.title}</h2>
+            <p>{s.desc}</p>
+            <button>
+              {s.btn}
+              <span className="arrow">→</span>
+            </button>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 }

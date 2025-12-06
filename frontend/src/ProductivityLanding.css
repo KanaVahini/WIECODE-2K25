@@ -405,7 +405,7 @@
 }
 
 .true-focus-word.focused {
-  background: linear-gradient(135deg, #CD853F 0%, #8B4513 50%, #D2B48C 100%);
+  background: #4A0E0E;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

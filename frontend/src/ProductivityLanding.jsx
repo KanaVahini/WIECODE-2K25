@@ -21,8 +21,7 @@ const ProductivityLanding = () => {
             </h1>
 
             <p className="description">
-              Celebrate the joy of accomplishment with an app designed to track your progress,
-              motivate your efforts, and celebrate your successes.
+              Your decisions are too valuable for deception. Tap here to expose the fake news, counterfeit products, and misleading reviews that shape your world.
             </p>
 
             <div className="button-group">
